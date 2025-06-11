@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #F9F9F9;
+    background-color: #dcdcdc;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,10 +99,67 @@ nav a:hover::after {
     display: none;
 }
 
-
 main {
-    margin-top: 100px;
-    position: relative;
+    margin-top: 70px;
+}
+
+.noticia {
+    padding: 40px 20px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 3px solid #a9a9a9;
+}
+
+.noticia h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.noticia-conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.noticia-conteudo img {
+    width: 30%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.noticia-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.noticia-texto p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.botao-leia {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f57c00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+.botao-leia:hover {
+    background-color: #e65100;
 }
 
 
@@ -115,6 +172,24 @@ main {
     }
     .menu-button {
         display: block;
+    }
+    .noticia-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .noticia-conteudo img {
+        width: 80%;
+    }
+
+    .noticia-texto {
+        align-items: center;
+    }
+
+    .botao-leia {
+        align-self: center;
+        margin-left: 0;
     }
 }
 
