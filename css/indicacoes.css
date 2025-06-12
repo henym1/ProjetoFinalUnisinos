@@ -33,7 +33,7 @@ nav li {
 }
 
 nav li:first-child {
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 nav a {
@@ -103,9 +103,86 @@ nav a:hover::after {
 main {
     margin-top: 100px;
     position: relative;
+    padding: 20px;
 }
 
+.abas-categorias {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
 
+.aba-categoria {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black;
+    padding-bottom: 8px;
+}
+
+.aba-categoria.ativa::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #003366;
+    border-radius: 2px;
+}
+
+.secao-cartoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.cartao {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px 16px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.cartao:hover {
+    background-color: #e6e6e6;
+}
+
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.conteudo-cartao h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.conteudo-cartao p {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
 
 
 
@@ -113,8 +190,15 @@ main {
     .hideOnMobile {
         display: none;
     }
+
     .menu-button {
         display: block;
+    }
+
+    .foto-perfil {
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
     }
 }
 
