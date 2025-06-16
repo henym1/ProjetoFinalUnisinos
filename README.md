@@ -14,3 +14,9 @@ Henry Matheus Adam - RA 1934934
 ### Professor orientador:
 Professor Doutor Roberto Zanoni
 
+# API
+Este projeto realiza consultas à API CalorieNinjas com o intuito de fornecer informações nutricionais aos usuários.
+
+[CalorieNinjas](https://calorieninjas.com/)
+
+![printCalorieNinjas](img/printCalorieNinjas.jpg)
