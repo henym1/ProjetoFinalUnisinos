@@ -40,8 +40,56 @@
     </header>
 
     <main>
-        <h1>COMPARADOR</h1>
+        <div class="comparacao">
+            <div class="coluna">
+                <h2>Origem Animal</h2>
+                <div class="seletor-imagem">
+                    <select id="select-animal">
+                        <option value="frango">Frango</option>
+                        <option value="carne">Carne</option>
+                        <option value="ovo">Ovo</option>
+                        <option value="leite">Leite</option>
+                    </select>
+                    <img id="img-animal" src="img/comparador/frango.jpg" alt="Frango">
+                </div>
+            </div>
+
+            <div class="coluna">
+                <h2>Origem Vegetal</h2>
+                <div class="seletor-imagem">
+                    <select id="select-vegetal">
+                        <option value="tofu">Tofu</option>
+                        <option value="lentilha">Lentilha</option>
+                        <option value="grao_de_bico">Grão-de-bico</option>
+                        <option value="soja">Proteína de soja</option>
+                        <option value="leite_soja">Leite de soja</option>
+                        <option value="seitan">Seitan</option>
+                    </select>
+                    <img id="img-vegetal" src="img/comparador/tofu.jpg" alt="Tofu">
+                </div>
+            </div>
+        </div>
+
+        <button id="btn-comparar">Comparar</button>
+
+        <section id="resultado" class="hidden">
+            <div class="resultado-lado">
+                <div id="info-animal"></div>
+                <div id="info-vegetal"></div>
+            </div>
+            <div id="analise-comparativa"></div>
+            <div class="aviso-box">
+                <div class="icone-alerta-wrapper">
+                    <img src="img/comparador/alert.png" alt="Alerta" class="icone-alerta">
+                </div>
+                <div class="texto-alerta">
+                    <p>Esses dados têm apenas caráter informativo.<br>Consulte um nutricionista.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+
 
     <script src="js/comparador.js"></script>
 </body>
